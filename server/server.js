@@ -2,6 +2,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const decorator = require("./database/decorator");
 
+require("dotenv").config();
+
 // data vars
 const PORT = process.env.EXPRESS_HOST_PORT;
 const SESSION_SECRET = process.env.SESSION_SECRET;
@@ -32,7 +34,17 @@ app.get("/api/smoke", (req, res) => {
   res.json({ smoke: "test" });
 });
 
+app.post("/api/contact", (req, res) => {
+  const { body } = req;
+
+  console.log(body);
+
+  res.json({
+    success: 200
+  });
+});
+
 // start server
 app.listen(PORT, () => {
-  console.log(`Server stated on port: ${PORT}`);
+  console.log(`Server started on port: ${PORT}`);
 });

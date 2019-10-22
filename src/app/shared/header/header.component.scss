@@ -1,0 +1,22 @@
+.header-container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: lighten(black, 25%);
+  padding: 20px 10px;
+  overflow: hidden;
+
+  a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .logo {
+    font-size: 40px;
+  }
+  .header-right {
+    float: right;
+  }
+}
