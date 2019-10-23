@@ -22,7 +22,9 @@ export class HomeComponent implements OnInit {
   constructor(private backend: BackendService) {}
 
   submit = () => {
-    this.backend.contact(this.formData);
+    this.backend.contact(this.formData).then(response => {
+      console.log(response);
+    });
   };
 
   ngOnInit() {}

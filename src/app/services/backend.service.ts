@@ -8,6 +8,6 @@ export class BackendService {
   constructor(private http: HttpClient) {}
 
   contact(data) {
-    return this.http.post("/api/contact", { username: "andrew" }).toPromise();
+    return this.http.post("/api/contact", data).toPromise();
   }
 }

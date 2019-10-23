@@ -1,7 +1,7 @@
 .header-container {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: lighten(black, 25%);
-  padding: 20px 10px;
+  padding: 10px;
   overflow: hidden;
 
   a {
@@ -13,10 +13,21 @@
     font-size: 18px;
     line-height: 25px;
   }
+  a:hover {
+    color: rgb(189, 189, 189);
+  }
   .logo {
     font-size: 40px;
   }
   .header-right {
     float: right;
   }
+}
+
+button {
+  background-color: rgb(22, 166, 255);
+  color: white;
+}
+button:hover {
+  background-color: rgb(71, 126, 226);
 }
