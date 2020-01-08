@@ -35,13 +35,10 @@ app.get("/api/smoke", (req, res) => {
 });
 
 app.post("/api/contact", (req, res) => {
-  const { body } = req;
+  let name = req.body.name;
+  let email = req.body.email;
 
-  console.log(body);
-
-  res.json({
-    success: 200
-  });
+  console.log(name, email);
 });
 
 // start server
